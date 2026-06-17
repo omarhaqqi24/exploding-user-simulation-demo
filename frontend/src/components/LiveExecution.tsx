@@ -44,7 +44,7 @@ export default function LiveExecution({
           </p>
 
           <p className="text-lg font-semibold">
-            {runtime}
+            {runtime}s
           </p>
         </div>
 

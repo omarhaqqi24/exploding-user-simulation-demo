@@ -16,10 +16,6 @@ export default function LatestResults({
   return (
     <div>
 
-      <h2 className="mb-4 text-xl font-semibold">
-        Latest Result
-      </h2>
-
       <div className="grid gap-6 md:grid-cols-4">
 
         <MetricCard

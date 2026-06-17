@@ -6,6 +6,7 @@ type Props = {
   status: "ACTIVE" | "INACTIVE";
   icon: ReactNode;
   buttonText?: string;
+  onAction?: () => void;
 };
 
 export default function ServiceCard({
@@ -14,6 +15,7 @@ export default function ServiceCard({
   status,
   icon,
   buttonText,
+  onAction
 }: Props) {
   const isActive = status === "ACTIVE";
 
@@ -50,7 +52,7 @@ export default function ServiceCard({
       </div>
 
       {buttonText && (
-        <button className="w-full rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-500">
+        <button onClick={onAction} className="w-full rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-500">
           {buttonText}
         </button>
       )}

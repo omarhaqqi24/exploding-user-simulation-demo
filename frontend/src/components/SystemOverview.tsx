@@ -1,6 +1,16 @@
 import { Activity } from "lucide-react";
 
-export default function SystemOverview() {
+type Props = {
+    servicesRunning: number;
+    currentLoad: string;
+    lastTest: string;
+};
+
+export default function SystemOverview({
+    servicesRunning,
+    currentLoad,
+    lastTest,
+}: Props) {
   return (
     <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
       <div className="mb-4 flex items-center gap-3">
@@ -24,7 +34,7 @@ export default function SystemOverview() {
           </p>
 
           <p className="text-xl font-bold">
-            7 / 7
+            {servicesRunning}
           </p>
         </div>
 
@@ -34,7 +44,7 @@ export default function SystemOverview() {
           </p>
 
           <p className="text-xl font-bold">
-            Idle
+            {currentLoad}
           </p>
         </div>
 
@@ -44,7 +54,7 @@ export default function SystemOverview() {
           </p>
 
           <p className="text-xl font-bold">
-            None
+            {lastTest}
           </p>
         </div>
       </div>
