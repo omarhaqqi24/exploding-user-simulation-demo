@@ -1,1 +1,1 @@
-# exploding-user-simulation-demo
+# Exploding User Simulation Demo
