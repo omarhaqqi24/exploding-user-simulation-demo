@@ -1,5 +1,3 @@
-# Exploding User Simulation Demo
-
 # Exploding User Simulation Dashboard
 
 A web-based control and monitoring dashboard developed for demonstrating the **Exploding User Simulation** capstone project.
